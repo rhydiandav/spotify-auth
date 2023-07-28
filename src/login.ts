@@ -1,7 +1,9 @@
 exports.handler = async () => {
   return {
     statusCode: 200,
-    headers: "application/json",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify({
       message: "Hello world!",
     }),
